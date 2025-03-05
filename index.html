@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+
+
+<body>
+
+    <!-- navbar ////////////////////////////// -->
+
+    <nav>
+        <div class="logo-nav">
+            <img src="./src/img/logo/logo.png" alt="">
+        </div>
+    </nav>
+
+    <!-- navbar END ////////////////////////////// -->
+
+    <!-- HERO ////////////////////////////// -->
+
+    <div class="hero">
+
+        <!-- vid bg absolute -->
+        <video autoplay muted loop id="hero-vid">
+            <source src="./src/img/hero/cover-bg-loop.m4v" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- text  -->
+
+        <div class="txt-container"></div>
+
+        <!-- ///////// robot head ////////// -->
+
+        <div id="head-container">
+            <!-- Idle Video (Default) -->
+            <video id="idle" class="head-vid" src="./src/img/hero/head/idle.mp4" autoplay loop muted playsinline></video>
+
+            <!-- Directional Videos (Initially Hidden) -->
+            <video id="left" class="head-vid" src="./src/img/hero/head/left.mp4" muted playsinline></video>
+            <video id="right" class="head-vid" src="./src/img/hero/head/right.mp4" muted playsinline></video>
+            <video id="down" class="head-vid" src="./src/img/hero/head/down.mp4" muted playsinline></video>
+            <video id="downLeft" class="head-vid" src="./src/img/hero/head/down-left.mp4" muted playsinline></video>
+            <video id="downRight" class="head-vid" src="./src/img/hero/head/down-right.mp4" muted playsinline></video>
+            <video id="up" class="head-vid" src="./src/img/hero/head/up.mp4" muted playsinline></video>
+            <video id="upLeft" class="head-vid" src="./src/img/hero/head/up-left.mp4" muted playsinline></video>
+            <video id="upRight" class="head-vid" src="./src/img/hero/head/up-right.mp4" muted playsinline></video>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <!-- HERO END ////////////////////////////// -->
+
+
+
+    <!-- MAIN ////////////////////////////// -->
+
+    <main></main>
+
+    <!-- MAIN END ////////////////////////////// -->
+
+
+    <!-- FOOTER ////////////////////////////// -->
+
+
+    <!-- FOOTER END ////////////////////////////// -->
+
+
+</body>
+
+<script src="./src/main.js"></script>
+
+</html>
