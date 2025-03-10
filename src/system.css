@@ -1,0 +1,388 @@
+/* //////////////// DIZAJN SISTEM ////////////////*/
+
+/* font import  */
+
+/* IBM PLEX SANS  */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* MANROPE */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+:root {
+
+    /*////// variabli za boja ////// */
+
+    /* sivi  */
+    --crna: #040607;
+    --siva-7: #080A0A;
+    --siva-6: #0B0D0E;
+    --siva-5: #0F1011;
+    --siva-4: #121414;
+    --siva-3: #303536;
+    --siva-2: #4E5558;
+    --siva-1: #6D7679;
+    --siva0: #8B969B;
+    --siva1: #9CA9AD;
+    --siva2: #ADBBC0;
+    --siva3: #BECED3;
+    --siva4: #CFE0E5;
+    --siva5: #D8E7EC;
+    --siva6: #E1EEF2;
+    --siva7: #EAF5F9;
+    --siva8: #F3FCFF;
+    --bela: #F8FDFF;
+
+    /* primarna  */
+    --primarna-8: #001328;
+    --primarna-7: #001E3C;
+    --primarna-6: #002A50;
+    --primarna-5: #003563;
+    --primarna-4: #004177;
+    --primarna-3: #005690;
+    --primarna-2: #006BA9;
+    --primarna-1: #0080C1;
+    --primarna0: #0095DA;
+    --primarna1: #23A4DF;
+    --primarna2: #46B3E4;
+    --primarna3: #68C2EA;
+    --primarna4: #8BD1EF;
+    --primarna5: #9DDAF3;
+    --primarna6: #B0E3F7;
+    --primarna7: #C2EBFB;
+    --primarna8: #D4F4FF;
+
+
+    /* sekundarna  */
+    --sekundarna-8: #2D0B03;
+    --sekundarna-7: #3B1107;
+    --sekundarna-6: #48180A;
+    --sekundarna-5: #561E0E;
+    --sekundarna-4: #632411;
+    --sekundarna-3: #8A351A;
+    --sekundarna-2: #B14622;
+    --sekundarna-1: #D8572B;
+    --sekundarna0: #FF6833;
+    --sekundarna1: #FD7343;
+    --sekundarna2: #FB7E54;
+    --sekundarna3: #F98864;
+    --sekundarna4: #F79374;
+    --sekundarna5: #F9A288;
+    --sekundarna6: #FBB19B;
+    --sekundarna7: #FDC0AF;
+    --sekundarna8: #FFCFC2;
+
+    /* /// alerts /// */
+    /* zholta  */
+    --zholta-8: #262000;
+    --zholta-4: #605100;
+    --zholta0: #CCAE00;
+    --zholta4: #CFBB6B;
+    --zholta8: #FFF1BE;
+
+    /* zelena */
+    --zelena-8: #020D01;
+    --zelena-4: #073305;
+    --zelena0: #14A110;
+    --zelena4: #8FC28C;
+    --zelena8: #D1EDCE;
+
+    /* crvena  */
+    --crvena-8: #1C0303;
+    --crvena-4: #590C0C;
+    --crvena0: #DB1814;
+    --crvena4: #E25252;
+    --crvena8: #FFDEDE;
+
+
+    /* ///////// FONTS ///////// */
+    --body-font: "Manrope", Arial, Helvetica, sans-serif;
+    --heading-font: "IBM Plex Sans", Arial, Helvetica, sans-serif;
+
+
+    /* font size  */
+    /* --font-size: clamp(0.5rem, 3.5vw, 1rem); */
+
+    /* spacings  */
+
+    --space34px: 34px;
+    --space28px: 28px;
+    --space22px: 22px;
+    --space18px: 18px;
+    --space12px: 12px;
+    --space8px: 8px;
+    --space4px: 4px;
+
+    /* padding levo-desno */
+    --padding-lr: 12%;
+    --padding-up-down: 4em;
+}
+
+
+/* ////////// alternate box model /////////  */
+html,
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-wrap: pretty;
+    scroll-behavior: smooth;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin-block-start: 0px;
+    /* margin-block-end: 0px; */
+}
+
+/* img width */
+img {
+    width: 100%;
+}
+
+
+
+/* ////////// paddings //////////// */
+.padding-lr {
+    padding: 0 var(--padding-lr);
+}
+
+.padding-up-down {
+    padding: var(--padding-up-down) 0;
+}
+
+.padding {
+    padding: var(--padding-up-down) var(--padding-lr);
+}
+
+
+/* /////// TEXT STYLES /////// */
+
+/* defaults  */
+
+html {
+    font-family: var(--body-font);
+    line-height: 1.6;
+    font-optical-sizing: auto;
+}
+
+.heading {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    line-height: 1.15;
+    /* letter-spacing: -0.02em; */
+}
+
+
+/* headings  */
+
+.h1-size {
+    font-size: 2.986rem;
+}
+
+.h2-size {
+    font-size: 2.488rem;
+}
+
+.h3-size {
+    font-size: 2.074rem;
+}
+
+.h4-size {
+    font-size: 1.728rem;
+}
+
+.h5-size {
+    font-size: 1.44rem;
+}
+
+.h6-size {
+    font-size: 1.2rem;
+}
+
+/* small  */
+
+.small {
+    font-size: 0.833rem;
+}
+
+.small-xs {
+    font-size: 0.694rem;
+}
+
+/* /////// buttons //////// */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+
+    border-radius: 9999999px;
+
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+
+    /* text-transform: uppercase; */
+    font-weight: 600;
+
+    transition: 0.1s;
+
+
+    color: var(--bela);
+    background-color: var(--primarna0);
+
+    padding: 8px 22px;
+    margin-right: 2rem;
+
+    >.btn-ico {
+        height: 1rem;
+        transition: 0.3s ease;
+
+        .st0 {
+            stroke: var(--bela);
+            stroke-width: 2.5px;
+        }
+
+        .st1 {
+            fill: var(--bela);
+        }
+    }
+
+    >.btn-ico-s {
+        height: 0.4rem !important;
+    }
+
+    &:hover {
+        background-color: var(--sekundarna0);
+    }
+
+    &:active {
+        background-color: var(--sekundarna-2);
+    }
+}
+
+
+
+/* link btn */
+
+.btn-link {
+    background-color: unset;
+    position: relative;
+    padding: 0px;    
+
+    &:after {
+        content: "";
+        background-color: var(--bela);
+        width: 0%;
+        transition: 0.3s ease;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    &:hover {
+        background-color: inherit;
+        color: var(--primarna4);
+
+        .btn-ico {
+            .st0 {
+                stroke: var(--primarna4);
+            }
+        }
+
+        &:after {
+            background-color: var(--primarna4);
+            width: 100%;
+        }
+    }
+
+    &:active {
+        color: var(--primarna0);
+
+        .btn-ico {
+            .st0 {
+                stroke: var(--primarna0);
+            }
+        }
+
+        &:after {
+            background-color: var(--primarna0);
+        }
+    }
+}
+
+
+/* /////  plavo  ////// */
+
+.btn-link-blue {
+    color: var(--primarna-2);
+
+    .btn-ico {
+        .st0 {
+            stroke: var(--primarna-2);
+        }
+
+        .st1 {
+            fill: var(--primarna-2);
+        }
+    }
+
+    &:after {
+        background-color: var(--primarna-2);
+    }
+
+    &:hover {
+        color: var(--sekundarna0);
+    
+        .btn-ico {
+            .st0 {
+                stroke: var(--sekundarna0);
+            }
+    
+            .st1 {
+                fill: var(--sekundarna0);
+            }
+        }
+
+        &:after {
+            background-color: var(--sekundarna0);
+        }
+        
+    }
+
+    &:active {
+        color: var(--sekundarna-4);
+    
+        .btn-ico {
+            .st0 {
+                stroke: var(--sekundarna-4);
+            }
+    
+            .st1 {
+                fill: var(--sekundarna-4);
+            }
+        }
+
+        &:after {
+            background-color: var(--sekundarna-4);
+        }
+        
+    }
+}
+
+/* /////// btn orange ////// */
+
+.btn-orange {
+    background-color: var(--sekundarna0);
+
+    &:hover {
+        background-color: var(--sekundarna-1);
+    }
+
+    &:active {
+        background-color: var(--sekundarna-2);
+    }
+}

@@ -1,75 +1,77 @@
-const idleVideo = document.getElementById("idle");
-const videos = {
-    left: document.getElementById("left"),
-    right: document.getElementById("right"),
-    down: document.getElementById("down"),
-    downLeft: document.getElementById("downLeft"),
-    downRight: document.getElementById("downRight"),
-    up: document.getElementById("up"),
-    upLeft: document.getElementById("upLeft"),
-    upRight: document.getElementById("upRight"),
-};
+// MK-EN toggle 
 
-let currentVideo = idleVideo; // Track the currently playing video
+document.querySelector(".jazik").addEventListener("click", function (e) {
+    e.preventDefault(); // Prevent default anchor behavior
 
-function showVideo(direction) {
-    const selectedVideo = videos[direction];
+    this.classList.toggle("active"); // Toggle active state
 
-    // Don't switch if the same video is already playing
-    if (currentVideo === selectedVideo) return;
+    const mkSpan = this.querySelector(".span-mk");
+    const enSpan = this.querySelector(".span-en");
 
-    // Hide previous video    
-    currentVideo.style.opacity = "0";
-    currentVideo.pause();
-    
-
-    // Show and play the new video
-    selectedVideo.style.opacity = "1";
-    selectedVideo.play();
-
-    // Update the currently playing video
-    currentVideo = selectedVideo;
-}
-
-function resetToIdle() {
-    if (currentVideo === idleVideo) return; // Don't reset if idle is already playing
-
-    // Hide current video
-    currentVideo.style.opacity = "0";
-    currentVideo.pause();
-
-    // Show idle animation
-    idleVideo.style.opacity = "1";
-    idleVideo.play();
-
-    // Update the current video
-    currentVideo = idleVideo;
-}
-
-// Event Listeners for Hover Areas
-document.addEventListener("mousemove", (e) => {
-    const width = window.innerWidth;
-    const height = window.innerHeight;
-    const x = e.clientX;
-    const y = e.clientY;
-
-    if (x < width * 0.3 && y < height * 0.3) {
-        showVideo("upLeft");
-    } else if (x > width * 0.7 && y < height * 0.3) {
-        showVideo("upRight");
-    } else if (x < width * 0.3 && y > height * 0.7) {
-        showVideo("downLeft");
-    } else if (x > width * 0.7 && y > height * 0.7) {
-        showVideo("downRight");
-    } else if (x < width * 0.3) {
-        showVideo("left");
-    } else if (x > width * 0.7) {
-        showVideo("right");
-    } else if (y < height * 0.3) {
-        showVideo("up");
-    } else if (y > height * 0.7) {
-        showVideo("down");
-    } else {
-        resetToIdle();
-    }
+    // Swap the "hover-color" class between the spans
+    mkSpan.classList.toggle("hover-color");
+    enSpan.classList.toggle("hover-color");
 });
+
+
+
+///////////////// navbar open close ///////////////////////////
+
+
+let lastScrollTop = 0;
+const navbar = document.querySelector(".navbar");
+const navOpen = document.querySelector(".nav0-open-cl");
+const triagolnikico = document.querySelector("#triagolnik-ico");
+let autoCloseTimeout; // Variable to store timeout
+
+// Function to close dropdown
+function closeDropdown() {
+    navOpen.style.height = "0px"; // Collapse
+    triagolnikico.style.transform = 'scaleY(100%)'; // Reset icon
+}
+
+// Navbar show/hide on scroll
+window.addEventListener("scroll", function () {
+    let scrollTop = window.scrollY;
+
+    if (scrollTop > lastScrollTop) {
+        // Scrolling down - hide navbar and close dropdown
+        navbar.style.transform = "translateY(-100%)";
+        closeDropdown();
+    } else {
+        // Scrolling up - show navbar
+        navbar.style.transform = "translateY(0)";
+    }
+
+    lastScrollTop = scrollTop;
+});
+
+// Open/close dropdown on click
+document.querySelector(".za-nas").addEventListener("click", function () {
+    if (navOpen.style.height === "0px" || navOpen.style.height === "") {
+        navOpen.style.height = navOpen.scrollHeight + "px"; // Expand
+        triagolnikico.style.transform = 'scaleY(-100%)';
+
+        // Clear any existing timeout and start a new one
+        clearTimeout(autoCloseTimeout);
+        autoCloseTimeout = setTimeout(() => {
+            closeDropdown();
+        }, 3000); // Auto-close after 3 seconds
+    } else {
+        closeDropdown(); // Collapse if already open
+    }    
+});
+
+// Cancel auto-close if the user hovers over the dropdown
+navOpen.addEventListener("mouseenter", function () {
+    clearTimeout(autoCloseTimeout);
+});
+
+// Restart auto-close when the mouse leaves
+navOpen.addEventListener("mouseleave", function () {
+    autoCloseTimeout = setTimeout(() => {
+        closeDropdown();
+    }, 2000);
+});
+
+///////////////// navbar open close END ///////////////////////////
