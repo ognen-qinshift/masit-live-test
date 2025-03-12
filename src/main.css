@@ -918,3 +918,100 @@ footer{
         }
     }
 }
+
+@media screen and (max-width:500px){
+
+    /* #head-container{
+        display: none;
+    } */
+
+    .hero{
+        height: 115vh;
+        flex-direction: column;
+    }
+
+    .txt-container{
+        margin-top: 8rem;
+    }
+
+    .navbar1{
+        padding: 0 3.7em;
+        width: 100%;
+    }
+
+    .links-nav{
+        display: none;
+    }
+
+    .padding-lr-nav{
+        width: 3.7em;
+    }
+
+    .za-nas{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* .carousel-postition{
+        height: 10em;
+    }
+
+    .carousel-x2, .logos-wrap{
+        height: 100%;
+    }
+
+    .carousel-logo-container{
+        height: 10em;
+    } */
+
+    .navbar2{
+        justify-content: flex-start;
+    }
+
+    .nav-mask{
+        display: none;
+    }
+
+    .main-wrapper{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .aktivnosti-kartici-wrap{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aside{
+        width: 100%;
+    }
+
+    .corners-sorabotnici{
+        padding-top: 2em;
+    }
+
+    .preporachani-wrap{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter-empty-div{
+        display: none;
+    }
+
+    .footer-container{
+        flex-direction: column;
+    }
+
+    .social-section{
+        text-align: left;
+    }
+
+    .social-icons{
+        float: left;
+    }
+
+    form>.btn{
+        margin-top: 1em;
+    }
+}
