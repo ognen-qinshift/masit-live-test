@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proekti</title>
+    <link rel="stylesheet" href="/src/css/system.css">
+    <link rel="stylesheet" href="/src/css/main.css">
+</head>
+
+
+<body>
+
+    <!-- /////////// header ///////////// -->
+
+    <header class="header"></header>
+    <script src="/src/js/header-insert.js"></script>
+    <script src="/src/js/header-interactions.js"></script>
+
+    <!-- /////////// header ////////////  -->
+
+
+    <!-- // heading //////////////////////////////////// -->
+
+
+    <section class="heading-container blue-gradient-bg padding-lr" style="position: relative;">
+        <!-- <div class="breadcrumbs">
+            <a href="/pages/proekti/projects.html" class="btn btn-link">
+                <svg class="btn-ico" viewBox="0 0 18 22">
+                    <defs>
+                        <style>
+                            .st0 {
+                                fill: none;
+                            }
+                        </style>
+                    </defs>
+                    <line class="st0" x1="9" y1="0" x2="9" y2="20" />
+                    <polyline class="st0" points="17 12.5 9 20 1 12.5" />
+                </svg>
+                Проекти
+            </a>            
+        </div> -->
+        <div class="heading-text-container">
+            <h2 class="heading h1-size">
+                Проекти
+            </h2>
+            <!-- <div class="date">
+                30. 30. 3333г.
+            </div> -->
+        </div>
+
+        <!-- corners bot 0vh -->
+        <div style="width: 100%; overflow: visible; position: absolute; bottom: 0; left: 0; z-index: 10;">
+            <div class="corners-sorabotnici-2" style="background: none;">
+                <div class="corner-container">
+                    <!-- <div class="corner-fill"></div>
+                    <img src="./src/img/icons/mask-corner.svg" alt="" class="corner1"> -->
+                    <div></div>
+                    <img src="./src/img/icons/mask-corner.svg" alt="" class="corner2">
+                    <div class="corner-fill"></div>
+                </div>
+            </div>
+        </div>
+        <!-- corners bot end -->
+
+    </section>
+
+    <!-- heading END --------------------- -->
+
+    <!-- // TABS //////////////////////////////////// -->
+    <!-- 
+    <div class="tabs-container padding-lr">
+        <button class="tab-button active" data-target="current-pr">Тековни проекти</button>
+        <button class="tab-button" data-target="finished-pr">Завршени проекти</button>
+    </div>
+     -->
+    <!-- TABS END --------------------- -->
+
+
+    <!-- // MAIN //////////////////////////////////// -->
+    <main class="pages-main padding-tb padding-lr" style="min-height: 60vh">
+
+        <!-- Current Projects -->
+        <h3 class="heading h2-size">
+            Тековни Проекти
+        </h3>
+
+        <div class="cards-wrapper-grid current-pr">
+            <!-- Current projects will be inserted here -->
+        </div>
+
+        <!-- Finished Projects -->
+        <h3 class="heading h2-size">
+            Завршени Проекти
+        </h3>
+
+        <div class="cards-wrapper-grid finished-pr">
+            <!-- Finished projects will be inserted here -->
+        </div>
+    </main>
+    <!-- main END --------------------- -->
+
+
+
+    <!-- FOOTER ////////////////////////////// -->
+
+    <footer></footer>
+    <script src="/src/js/footer-insert.js"></script>
+
+    <!-- FOOTER END ////////////////////////////// -->
+
+
+
+    <!-- SKRIPTI  -->
+    <!-- PROEKTI DATA  -->
+    <script src="/pages/proekti/projects-data.js"></script>
+    <!-- povrzuvanje  -->
+    <script src="/src/js/populate-cards.js"></script>
+
+    <!-- so koja data da se povrze  -->
+    <script>
+        // Filter and populate current projects
+        const currentProjects = projectsData.filter(project => project.status === "current");
+        populateCards(currentProjects, '.current-pr');
+
+        // Filter and populate finished projects
+        const finishedProjects = projectsData.filter(project => project.status === "finished");
+        populateCards(finishedProjects, '.finished-pr');
+    </script>
+
+    <!-- tabs  -->
+    <!-- <script src="/proekti/tab-switcher.js"></script> -->
+
+    <script src="/src/js/card-entry-animation.js"></script>
+
+
+
+</body>
+
+</html>

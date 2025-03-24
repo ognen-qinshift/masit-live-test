@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-inner</title>
+    <link rel="stylesheet" href="/src/css/system.css">
+    <link rel="stylesheet" href="/src/css/main.css">
+</head>
+
+
+<body>
+
+    <!-- /////////// header ///////////// -->
+
+    <header class="header"></header>
+    <script src="/src/js/header-insert.js"></script>
+    <script src="/src/js/header-interactions.js"></script>
+
+    <!-- /////////// header ////////////  -->
+
+
+    <!-- // heading //////////////////////////////////// -->
+
+
+    <section class="heading-container padding-lr"
+        style="height: 30vh; background-color: blue; display: flex; align-items: center;">
+        <div class="heading-inside" style="color: white; font-size: 60px;">
+            <!-- naslov na proektot -->
+        </div>
+        <div class="project-date"></div>
+    </section>
+
+    <!-- heading END --------------------- -->
+
+
+    <!-- // MAIN //////////////////////////////////// -->
+    <main class="main-wrapper padding-lr" style="min-height: 60vh">
+
+        <div class="main-content">
+
+            <!--//////////// data /////////// -->
+            <img src="" alt="" class="project-image">
+            <div class="data-container">
+                <!-- data  -->
+            </div>
+            <!--//////////// data /////////// -->
+
+        </div>
+
+
+        <!-- ///////////////aside ///////////////////// -->
+        <aside class="aside">
+            <!--........../////////// novosti x3 /////////............ -->
+            <div class="proekti-wrap">
+                <h3 class="heading h2-size">Новости</h3>
+                <div class="aside-cards-wrap">
+                    <!-- PROEKTI DATA  -->
+                    <script src="/pages/novosti/news-data.js"></script>
+                    <!-- povrzuvanje  -->
+                    <script src="/src/js/populate-cards.js"></script>
+                    <!-- broj  -->
+                    <script>
+                        populateCards(newsData, '.aside-cards-wrap', 2);
+                    </script>
+                </div>
+
+                <!-- end btn  -->
+                <div>
+                    <a href="/pages/novosti/news.html" class="btn btn-orange">Сите новости
+                        <svg class="btn-ico" viewBox="0 0 20 20">
+                            <defs>
+                                <style>
+                                    .st0 {
+                                        fill: none;
+                                    }
+                                </style>
+                            </defs>
+                            <line class="st0" x1="1" y1="15" x2="15" y2="1" />
+                            <polyline class="st0" points="15 15 15 1 1 1" />
+                        </svg>
+                    </a>
+                </div>
+                <!-- end btn  -->
+            </div>
+
+            <!--........../////////// novosti x3 END /////////............ -->
+        </aside>
+        <!-- ///////////////aside END ///////////////////// -->
+
+
+    </main>
+    <!-- main END --------------------- -->
+
+
+
+    <!-- FOOTER ////////////////////////////// -->
+
+    <footer class="padding-lr footer"></footer>
+    <script src="/src/js/footer-insert.js"></script>
+
+    <!-- FOOTER END ////////////////////////////// -->
+
+
+
+    <!-- SKRIPTI  -->
+    <!-- PROEKTI DATA  -->
+    <script src="/pages/proekti/projects-data.js"></script>
+    <!-- povrzuvanje  -->
+    <script src="/src/js/populate-data.js"></script>
+    <!-- so koja data da se povrze  -->
+    <script>
+        populateData(projectsData); // target data
+        initializePage(projectsData);
+    </script>
+
+
+
+</body>
+
+</html>

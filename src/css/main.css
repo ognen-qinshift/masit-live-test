@@ -70,12 +70,12 @@
     aspect-ratio: 3/2;
     flex-shrink: 0;
 
-    mask-image: url(./img/icons/mask-corner.svg);
+    mask-image: url(../img/icons/mask-corner.svg);
     mask-mode: alpha;
 }
 
 .maska-desno {
-    mask-image: url(./img/icons/mask-corner-2.svg);
+    mask-image: url(../img/icons/mask-corner-2.svg);
 }
 
 .mask-middle {
@@ -320,7 +320,7 @@ main .heading {
     color: var(--primarna0);
 }
 
-main .btn{
+main .btn {
     margin-right: 0px;
 }
 
@@ -338,7 +338,7 @@ main .btn{
     background-blend-mode: multiply;
     padding-bottom: 56px;
 
-    h2{
+    h2 {
         margin-block-end: 12px;
     }
 }
@@ -439,7 +439,7 @@ main .btn{
     padding-top: 22px;
     padding-bottom: 44px;
 
-    background:  linear-gradient( transparent 90%, var(--siva8) 96%, var(--siva4) 100%);
+    background: linear-gradient(transparent 90%, var(--siva8) 96%, var(--siva4) 100%);
 }
 
 
@@ -463,7 +463,7 @@ main .btn{
     &.heading {
         color: var(--primarna0);
     }
-    
+
 }
 
 
@@ -479,6 +479,7 @@ main .btn{
     padding: 32px 32px;
     text-align: center;
 }
+
 .aside>.proekti-wrap {
     position: sticky;
     top: 0px;
@@ -523,10 +524,11 @@ main .btn{
     top: 28px;
     left: 0;
 
-    display: flex;
-    width: fit-content;
-    align-items: stretch;
-    gap: 22px;
+    /* display: flex; */
+    /* width: max-content; */
+    width: calc(420px*4);
+    /* align-items: stretch; */
+    /* gap: 22px; */
 }
 
 .empty-card {
@@ -535,6 +537,7 @@ main .btn{
 
 .card {
     flex-shrink: 0;
+    height: 100%;
 }
 
 .proekti-cards-wrap .card-img {
@@ -639,7 +642,7 @@ main .btn{
 
 /* ///////////////////////////  AKTIVNOSTI ////////////////////////////// */
 
-.aktivnosti{
+.aktivnosti {
     text-align: center;
     padding-right: 32px;
     padding-left: 32px;
@@ -670,8 +673,8 @@ main .btn{
     padding: 30px;
 
     background: radial-gradient(farthest-corner at 0px 0px,
-        var(--primarna8) -50%,
-        var(--bela) 160%);
+            var(--primarna8) -50%,
+            var(--bela) 160%);
 }
 
 
@@ -687,7 +690,7 @@ main .btn{
         padding-bottom: 4px;
         border-bottom: 2px solid var(--siva4);
 
-        &:last-of-type{
+        &:last-of-type {
             margin-bottom: 0px;
             padding-bottom: 0px;
             border-bottom: transparent;
@@ -705,7 +708,7 @@ main .btn{
     border-radius: 99999999px;
     margin-bottom: 12px;
 
-    > img {        
+    >img {
         width: 60%;
         aspect-ratio: 1/1;
         object-fit: cover;
@@ -714,35 +717,35 @@ main .btn{
 
 /* /////////////////  sections  sorabotnici ////////////////// */
 
-.corners-sorabotnici{
-    background:  linear-gradient(var(--siva4) 0%, var(--siva3) 200%);    
+.corners-sorabotnici {
+    background: linear-gradient(var(--siva4) 0%, var(--siva3) 200%);
 }
 
-.corners-sorabotnici-2{
-    background:  linear-gradient(var(--siva4) 0%, var(--siva3) 100%); 
+.corners-sorabotnici-2 {
+    background: linear-gradient(var(--siva4) 0%, var(--siva3) 100%);
 }
 
 
 .kluchni,
-.preporachani{
+.preporachani {
     padding-top: 44px;
     padding-bottom: 44px;
     text-align: center;
 
-    background:  linear-gradient(var(--bela) 60px, var(--siva4) 100%); 
+    background: linear-gradient(var(--bela) 60px, var(--siva4) 100%);
 
-    div{
+    div {
         font-family: var(--heading-font);
         font-weight: bold;
         font-size: x-large;
         color: var(--siva-2);
     }
 
-    a{
+    a {
         text-decoration: none;
     }
 
-    img{
+    img {
         border: 2px solid var(--siva3);
         border-radius: 22px;
         padding: 12px;
@@ -753,33 +756,24 @@ main .btn{
     }
 }
 
-.preporachani-wrap{
+.preporachani-wrap {
     width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 22px;
-    
+
 }
 
-.preporachani img{
+.preporachani img {
     flex-grow: 1;
 }
 
 /* /////////////// newsletter ///////////////// */
 
 
-.newsletter{
+.newsletter {
     padding-top: 44px;
     padding-bottom: 44px;
-    background:
-    radial-gradient(
-        circle        
-        farthest-corner
-        at top left,        
-        var(--primarna-4) 0%, transparent 100%),
-        var(--primarna0);
-    background-blend-mode: multiply; 
-
 
     color: var(--primarna6);
     font-size: large;
@@ -787,26 +781,34 @@ main .btn{
     display: flex;
 
 
-    .heading{
+    .heading {
         color: var(--bela);
     }
 
-    div{
+    div {
         width: 100%;
     }
 }
 
-.prijavi-se{
+.blue-gradient-bg {
+    background:
+        radial-gradient(circle farthest-corner at top left,
+            var(--primarna-4) 0%, transparent 100%),
+        var(--primarna0);
+    background-blend-mode: multiply;
+}
+
+.prijavi-se {
     padding-bottom: 34px;
 }
 
-input{
+input {
     border: none;
     font-size: large;
     font-family: var(--body-font);
 }
 
-#email{
+#email {
     background-color: transparent;
     border-bottom: 2px solid var(--primarna6);
     margin: 0px 12px;
@@ -815,7 +817,7 @@ input{
 
 /* //////////////// footer ////////////////// */
 
-footer{
+footer {
     background-color: var(--siva-4);
     color: var(--siva0);
 }
@@ -827,191 +829,207 @@ footer{
     padding-top: 44px;
 }
 
-.footer-bottom{
+.footer-bottom {
     width: 100%;
     text-align: center;
     padding-top: 44px;
     padding-bottom: 44px;
 }
 
-.contact-section{
+.contact-section {
     width: 100%;
-    div{
+
+    div {
         padding-bottom: 12px;
     }
 
-    a{
-        display: inline-flex;        
+    a {
+        display: inline-flex;
 
-        img{
+        img {
             height: 1.2rem;
             width: auto;
-            transform: translateY(4px); 
+            transform: translateY(4px);
         }
 
-        .tel-invis{
+        .tel-invis {
             opacity: 0;
         }
-        
-        &:hover{
-            img{
+
+        &:hover {
+            img {
                 filter: brightness(200%);
-            };
+            }
+
+            ;
         }
     }
-
-
-
-
 }
 
 
-.chlen-section{
+.chlen-section {
     width: 100%;
     flex-shrink: 1;
     text-align: center;
-    p{
+
+    p {
         width: 100%;
         text-align: center;
     }
 }
 
-.masit-logo-foooter{
+.masit-logo-foooter {
     height: 60px;
     width: auto;
 }
 
-.partners{
+.partners {
     width: 100%;
     display: flex;
     gap: 22px;
-    img{
+
+    img {
         height: 60px;
     }
 }
 
-.witsa{
+.witsa {
     padding: 10px;
     background-color: white;
 }
 
 
-.social-section{
+.social-section {
     text-align: right;
 
 }
 
-.social-icons{
+.social-icons {
     float: right;
     width: 50%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 22px;
-    a{
+
+    a {
         filter: grayscale(100%);
         filter: contrast(0%);
         transition: 0.1s ease;
 
-        &:hover{
+        &:hover {
             filter: grayscale(0%);
             filter: contrast(100%);
         }
     }
 }
 
-@media screen and (max-width:500px){
 
-    /* #head-container{
-        display: none;
-    } */
 
-    .hero{
-        height: 115vh;
-        flex-direction: column;
+
+/* //////////////////////////// CARDS //////////////////////////////////////////////// */
+
+/* responsive grid */
+
+
+.cards-wrapper-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Responsive grid */
+    gap: 20px;
+}
+
+.card-wrap {
+    height: auto;
+    overflow: hidden;
+}
+
+/* card body  */
+
+.card-animation {
+    animation: card-enter 1s;
+    animation-timing-function: linear;
+    transform-origin: bottom;
+    /* opacity: 0; */
+}
+
+
+
+
+
+
+
+/* //// cards animation  //////  */
+
+@keyframes card-enter {
+    0% {
+        transform:
+        translateY(100%)
+        scale(.8);
+    }
+    50% {
+        transform:
+        translateY(40%)
+        scale(.9);
+    }
+}
+
+
+
+
+
+
+/*//////////////////////////////// PAGES ////////////////////////////////////////////////////////////////////*/
+
+
+/* ////////// heading section ///////////// */
+
+
+.heading-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+
+    padding-top: 180px;
+    padding-bottom: 70px;
+
+    background-color: var(--primarna0);
+    color: var(--bela);
+
+}
+
+.breadcrumbs {
+    width: auto;
+    padding-top: .4em;
+
+    .btn-ico {
+        transform:
+            rotate(90deg) translateY(-2px);
     }
 
-    .txt-container{
-        margin-top: 8rem;
+    &:hover {
+        .btn-ico {
+            transform:
+                rotate(90deg) translateY(2px);
+        }
     }
+}
 
-    .navbar1{
-        padding: 0 3.7em;
-        width: 100%;
-    }
+.heading-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
-    .links-nav{
-        display: none;
-    }
+.date {
+    color: var(--primarna4);
+}
 
-    .padding-lr-nav{
-        width: 3.7em;
-    }
 
-    .za-nas{
-        padding-left: 0;
-        padding-right: 0;
-    }
+/*//////////// body section ////////// */
 
-    /* .carousel-postition{
-        height: 10em;
-    }
-
-    .carousel-x2, .logos-wrap{
-        height: 100%;
-    }
-
-    .carousel-logo-container{
-        height: 10em;
-    } */
-
-    .navbar2{
-        justify-content: flex-start;
-    }
-
-    .nav-mask{
-        display: none;
-    }
-
-    .main-wrapper{
-        flex-direction: column;
-        padding: 0;
-    }
-
-    .aktivnosti-kartici-wrap{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .aside{
-        width: 100%;
-    }
-
-    .corners-sorabotnici{
-        padding-top: 2em;
-    }
-
-    .preporachani-wrap{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .newsletter-empty-div{
-        display: none;
-    }
-
-    .footer-container{
-        flex-direction: column;
-    }
-
-    .social-section{
-        text-align: left;
-    }
-
-    .social-icons{
-        float: left;
-    }
-
-    form>.btn{
-        margin-top: 1em;
-    }
+.pages-main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
