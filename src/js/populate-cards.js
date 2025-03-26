@@ -93,10 +93,11 @@ waitForElement('.card', function (cards) {
             if (entry.isIntersecting) {
                 card3.classList.add('card-animation');
                 return; // if we added the class, exit the function
-            }
+            } else {
 
-            // We're not intersecting, so remove the class!
-            card3.classList.remove('card-animation');
+                // We're not intersecting, so remove the class!
+                card3.classList.remove('card-animation');
+            };
         });
     });
 

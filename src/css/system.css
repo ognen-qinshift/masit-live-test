@@ -14,85 +14,85 @@
     /*////// variabli za boja ////// */
 
     /* sivi  */
-    --crna: #040607;
-    --siva-7: #080A0A;
-    --siva-6: #0B0D0E;
-    --siva-5: #0F1011;
-    --siva-4: #121414;
-    --siva-3: #303536;
-    --siva-2: #4E5558;
-    --siva-1: #6D7679;
-    --siva0: #8B969B;
-    --siva1: #9CA9AD;
-    --siva2: #ADBBC0;
-    --siva3: #BECED3;
-    --siva4: #CFE0E5;
-    --siva5: #D8E7EC;
-    --siva6: #E1EEF2;
-    --siva7: #EAF5F9;
-    --siva8: #F3FCFF;
-    --bela: #F8FDFF;
+    --crna: rgb(4, 6, 7);
+    --siva-7: rgb(8, 10, 10);
+    --siva-6: rgb(11, 13, 14);
+    --siva-5: rgb(15, 16, 17);
+    --siva-4: rgb(18, 20, 20);
+    --siva-3: rgb(48, 53, 54);
+    --siva-2: rgb(78, 85, 88);
+    --siva-1: rgb(109, 118, 121);
+    --siva0: rgb(139, 150, 155);
+    --siva1: rgb(156, 169, 173);
+    --siva2: rgb(173, 187, 192);
+    --siva3: rgb(190, 206, 211);
+    --siva4: rgb(207, 224, 229);
+    --siva5: rgb(216, 231, 236);
+    --siva6: rgb(225, 238, 242);
+    --siva7: rgb(234, 245, 249);
+    --siva8: rgb(243, 252, 255);
+    --bela: rgb(248, 253, 255);
 
     /* primarna  */
-    --primarna-8: #001328;
-    --primarna-7: #001E3C;
-    --primarna-6: #002A50;
-    --primarna-5: #003563;
-    --primarna-4: #004177;
-    --primarna-3: #005690;
-    --primarna-2: #006BA9;
-    --primarna-1: #0080C1;
-    --primarna0: #0095DA;
-    --primarna1: #23A4DF;
-    --primarna2: #46B3E4;
-    --primarna3: #68C2EA;
-    --primarna4: #8BD1EF;
-    --primarna5: #9DDAF3;
-    --primarna6: #B0E3F7;
-    --primarna7: #C2EBFB;
-    --primarna8: #D4F4FF;
+    --primarna-8: rgb(0, 19, 40);
+    --primarna-7: rgb(0, 30, 60);
+    --primarna-6: rgb(0, 42, 80);
+    --primarna-5: rgb(0, 53, 99);
+    --primarna-4: rgb(0, 65, 119);
+    --primarna-3: rgb(0, 86, 144);
+    --primarna-2: rgb(0, 107, 169);
+    --primarna-1: rgb(0, 128, 193);
+    --primarna0: rgb(0, 149, 218);
+    --primarna1: rgb(35, 164, 223);
+    --primarna2: rgb(70, 179, 228);
+    --primarna3: rgb(104, 194, 234);
+    --primarna4: rgb(139, 209, 239);
+    --primarna5: rgb(157, 218, 243);
+    --primarna6: rgb(176, 227, 247);
+    --primarna7: rgb(194, 235, 251);
+    --primarna8: rgb(212, 244, 255);
 
 
     /* sekundarna  */
-    --sekundarna-8: #2D0B03;
-    --sekundarna-7: #3B1107;
-    --sekundarna-6: #48180A;
-    --sekundarna-5: #561E0E;
-    --sekundarna-4: #632411;
-    --sekundarna-3: #8A351A;
-    --sekundarna-2: #B14622;
-    --sekundarna-1: #D8572B;
-    --sekundarna0: #FF6833;
-    --sekundarna1: #FD7343;
-    --sekundarna2: #FB7E54;
-    --sekundarna3: #F98864;
-    --sekundarna4: #F79374;
-    --sekundarna5: #F9A288;
-    --sekundarna6: #FBB19B;
-    --sekundarna7: #FDC0AF;
-    --sekundarna8: #FFCFC2;
+    --sekundarna-8: rgb(45, 11, 3);
+    --sekundarna-7: rgb(59, 17, 7);
+    --sekundarna-6: rgb(72, 24, 10);
+    --sekundarna-5: rgb(86, 30, 14);
+    --sekundarna-4: rgb(99, 36, 17);
+    --sekundarna-3: rgb(138, 53, 26);
+    --sekundarna-2: rgb(177, 70, 34);
+    --sekundarna-1: rgb(217, 87, 43);
+    --sekundarna0: rgb(255, 104, 51);
+    --sekundarna1: rgb(253, 115, 67);
+    --sekundarna2: rgb(251, 126, 84);
+    --sekundarna3: rgb(249, 136, 100);
+    --sekundarna4: rgb(247, 147, 116);
+    --sekundarna5: rgb(249, 162, 136);
+    --sekundarna6: rgb(251, 177, 155);
+    --sekundarna7: rgb(253, 192, 175);
+    --sekundarna8: rgb(255, 207, 194);
 
     /* /// alerts /// */
     /* zholta  */
-    --zholta-8: #262000;
-    --zholta-4: #605100;
-    --zholta0: #CCAE00;
-    --zholta4: #CFBB6B;
-    --zholta8: #FFF1BE;
+    --zholta-8: rgb(38, 32, 0);
+    --zholta-4: rgb(96, 81, 0);
+    --zholta0: rgb(204, 174, 0);
+    --zholta4: rgb(207, 187, 107);
+    --zholta8: rgb(255, 241, 190);
 
     /* zelena */
-    --zelena-8: #020D01;
-    --zelena-4: #073305;
-    --zelena0: #14A110;
-    --zelena4: #8FC28C;
-    --zelena8: #D1EDCE;
+    --zelena-8: rgb(2, 13, 1);
+    --zelena-4: rgb(7, 51, 5);
+    --zelena0: rgb(20, 161, 16);
+    --zelena4: rgb(143, 194, 140);
+    --zelena8: rgb(209, 237, 206);
 
     /* crvena  */
-    --crvena-8: #1C0303;
-    --crvena-4: #590C0C;
-    --crvena0: #DB1814;
-    --crvena4: #E25252;
-    --crvena8: #FFDEDE;
+    --crvena-8: rgb(28, 3, 3);
+    --crvena-4: rgb(89, 12, 12);
+    --crvena0: rgb(219, 24, 20);
+    --crvena4: rgb(226, 82, 82);
+    --crvena8: rgb(255, 222, 222);
 
 
     /* ///////// FONTS ///////// */
@@ -115,6 +115,11 @@
 
     /* padding levo-desno */
     --padding-lr: 12%;
+
+    --padding-tb-s: 20px;
+    --padding-tb: 40px;
+    --padding-tb-xl: 80px;
+    --padding-tb-xxl: 120px;
 }
 
 
@@ -150,17 +155,17 @@ img {
 }
 
 .padding-tb-s {
-    padding-top: 20px ;
-    padding-bottom: 20px;
+    padding-top: var(--padding-tb-s);
+    padding-bottom: var(--padding-tb-s);
 }
 
 .padding-tb {
-    padding-top: 40px ;
-    padding-bottom: 40px;
+    padding-top: var(--padding-tb);
+    padding-bottom: var(--padding-tb);
 }
 
 .padding {
-    padding: var(--padding-up-down) var(--padding-lr);
+    padding: var(--padding-tb) var(--padding-lr);
 }
 
 

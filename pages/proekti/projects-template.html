@@ -22,22 +22,58 @@
     <!-- /////////// header ////////////  -->
 
 
-    <!-- // heading //////////////////////////////////// -->
+        <!-- // heading //////////////////////////////////// -->
 
+        <section class="heading-container blue-gradient-bg padding-lr" style="position: relative;">
+            <!-- breadcrumbs  -->
+            <div class="breadcrumbs">
+                <a href="/pages/proekti/projects.html" class="btn btn-link">
+                    <svg class="btn-ico" viewBox="0 0 18 22">
+                        <defs>
+                            <style>
+                                .st0 {
+                                    fill: none;
+                                }
+                            </style>
+                        </defs>
+                        <line class="st0" x1="9" y1="0" x2="9" y2="20" />
+                        <polyline class="st0" points="17 12.5 9 20 1 12.5" />
+                    </svg>
+                    Проекти
+                </a>            
+            </div>
+            <!-- breadcrumbs  END -->
 
-    <section class="heading-container padding-lr"
-        style="height: 30vh; background-color: blue; display: flex; align-items: center;">
-        <div class="heading-inside" style="color: white; font-size: 60px;">
-            <!-- naslov na proektot -->
-        </div>
-        <div class="project-date"></div>
-    </section>
+            <!-- heading txt  -->
+            <div class="heading-text-container">
+                <h2 class="heading heading-inside h1-size ">
+                    Проекти
+                </h2>
+                <div class="date project-date"></div>
+            </div>
+            <!-- heading txt END -->
+    
+            <!-- corners bot 0vh -->
+            <div style="width: 100%; overflow: visible; position: absolute; bottom: 0; left: 0; z-index: 10;">
+                <div class="corners-sorabotnici-2" style="background: none;">
+                    <div class="corner-container">
+                        <!-- <div class="corner-fill"></div>
+                        <img src="./src/img/icons/mask-corner.svg" alt="" class="corner1"> -->
+                        <div></div>
+                        <img src="./src/img/icons/mask-corner.svg" alt="" class="corner2">
+                        <div class="corner-fill"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- corners bot end -->
+    
+        </section>    
+        <!-- heading END --------------------- -->
 
-    <!-- heading END --------------------- -->
 
 
     <!-- // MAIN //////////////////////////////////// -->
-    <main class="main-wrapper padding-lr" style="min-height: 60vh">
+    <main class="main-aside-wrapper padding-lr">
 
         <div class="main-content">
 
@@ -51,43 +87,43 @@
         </div>
 
 
-        <!-- ///////////////aside ///////////////////// -->
-        <aside class="aside">
-            <!--........../////////// novosti x3 /////////............ -->
-            <div class="proekti-wrap">
-                <h3 class="heading h2-size">Новости</h3>
-                <div class="aside-cards-wrap">
-                    <!-- PROEKTI DATA  -->
-                    <script src="/pages/novosti/news-data.js"></script>
-                    <!-- povrzuvanje  -->
-                    <script src="/src/js/populate-cards.js"></script>
-                    <!-- broj  -->
-                    <script>
-                        populateCards(newsData, '.aside-cards-wrap', 2);
-                    </script>
+            <!-- ///////////////aside ///////////////////// -->
+            <aside class="aside">
+                <!--........../////////// novosti x3 /////////............ -->
+                <div class="aside-content-sticky">
+                    <h3 class="heading h2-size">Новости</h3>
+                    <div class="aside-cards-wrap">
+                        <!-- PROEKTI DATA  -->
+                        <script src="/pages/novosti/news-data.js"></script>
+                        <!-- povrzuvanje  -->
+                        <script src="/src/js/populate-cards.js"></script>
+                        <!-- broj  -->
+                        <script>
+                            populateCards(newsData, '.aside-cards-wrap', 2);
+                        </script>
+                    </div>
+
+                    <!-- end btn  -->
+                    <div>
+                        <a href="/pages/novosti/news.html" class="btn btn-orange">Сите новости
+                            <svg class="btn-ico" viewBox="0 0 20 20">
+                                <defs>
+                                    <style>
+                                        .st0 {
+                                            fill: none;
+                                        }
+                                    </style>
+                                </defs>
+                                <line class="st0" x1="1" y1="15" x2="15" y2="1" />
+                                <polyline class="st0" points="15 15 15 1 1 1" />
+                            </svg>
+                        </a>
+                    </div>
+                    <!-- end btn  -->
                 </div>
 
-                <!-- end btn  -->
-                <div>
-                    <a href="/pages/novosti/news.html" class="btn btn-orange">Сите новости
-                        <svg class="btn-ico" viewBox="0 0 20 20">
-                            <defs>
-                                <style>
-                                    .st0 {
-                                        fill: none;
-                                    }
-                                </style>
-                            </defs>
-                            <line class="st0" x1="1" y1="15" x2="15" y2="1" />
-                            <polyline class="st0" points="15 15 15 1 1 1" />
-                        </svg>
-                    </a>
-                </div>
-                <!-- end btn  -->
-            </div>
-
-            <!--........../////////// novosti x3 END /////////............ -->
-        </aside>
+                <!--........../////////// novosti x3 END /////////............ -->
+            </aside>
         <!-- ///////////////aside END ///////////////////// -->
 
 
@@ -98,7 +134,7 @@
 
     <!-- FOOTER ////////////////////////////// -->
 
-    <footer class="padding-lr footer"></footer>
+    <footer></footer>
     <script src="/src/js/footer-insert.js"></script>
 
     <!-- FOOTER END ////////////////////////////// -->
