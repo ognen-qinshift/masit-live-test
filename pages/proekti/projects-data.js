@@ -1,7 +1,7 @@
 // Function to load HTML content for all projects
 async function loadProjectContent(dataVarName) {
     for (const project of dataVarName) {
-        const htmlUrl = `/pages/proekti/inner-pages/${project.id}.html`;
+        const htmlUrl = `./pages/proekti/inner-pages/${project.id}.html`;
         project.content = await fetchHTML(htmlUrl);
     }
 }
@@ -15,11 +15,11 @@ let projectsData = [
         id: "pateka-za-digitalizacija",
         status: "current", // "current" or "finished"
         // za kartica
-        thumbnail: "/src/img/cards/proekti/pateka za digitalizacija.png",
+        thumbnail: "./src/img/cards/proekti/pateka za digitalizacija.png",
         naslov: "Патека за дигитализација",
         opis: "Проектот ги поддржува МСП во Македонија, Косово и Србија за дигитална трансформација преку развој на стратегии и имплементација на ИКТ решенија.",
         datum: "30. 08. 2021г.",
-        link: "/pages/proekti/projects-template.html?id=pateka-za-digitalizacija", // <- LINK DO STRANATA
+        link: "./pages/proekti/projects-template.html?id=pateka-za-digitalizacija", // <- LINK DO STRANATA
 
         // ZA VNATRE HTML!
         content: `
@@ -34,11 +34,11 @@ let projectsData = [
         id: "digitalna-transformacija",
         status: "current", // "current" or "finished"
         // za kartica
-        thumbnail: "/src/img/cards/proekti/poddrshka.png",
+        thumbnail: "./src/img/cards/proekti/poddrshka.png",
         naslov: "Поддршка за дигитална трансформација во МСП",
         opis: "МАСИТ ќе спроведе проект за дигитална трансформација на МСП, создавајќи алатка за само-проценка и обезбедувајќи експертска анализа за креирање стратегии.",
         datum: "30. 08. 2021г.",
-        link: "/pages/proekti/projects-template.html?id=digitalna-transformacija", // <- LINK DO STRANATA
+        link: "./pages/proekti/projects-template.html?id=digitalna-transformacija", // <- LINK DO STRANATA
 
         // ZA VNATRE HTML!
         content: `
@@ -54,11 +54,11 @@ let projectsData = [
         id: "usaid-biznis-regulativa",
         status: "current", // "current" or "finished"
         // za kartica
-        thumbnail: "/src/img/cards/proekti/proekt na usaid-biznis regulativa.png",
+        thumbnail: "./src/img/cards/proekti/proekt na usaid-biznis regulativa.png",
         naslov: "Проект на УСАИД – Партнерство за подобра бизнис регулатива",
         opis: "Проектот поддржува МСП во подобрување на законската усогласеност преку информативни сесии, ваучер шема, создавање платформа за дијалог и развој на интерактивни водичи и брошури.",
         datum: "30. 08. 2021г.",
-        link: "/pages/proekti/projects-template.html?id=usaid-biznis-regulativa", // <- LINK DO STRANATA
+        link: "./pages/proekti/projects-template.html?id=usaid-biznis-regulativa", // <- LINK DO STRANATA
 
         // ZA VNATRE HTML!
         content: `
@@ -74,11 +74,11 @@ let projectsData = [
         id: "mladi-hub",
         status: "current", // "current" or "finished"
         // za kartica
-        thumbnail: "/src/img/cards/proekti/mladi-hab.png",
+        thumbnail: "./src/img/cards/proekti/mladi-hab.png",
         naslov: "МЛАДИ ХАБ – Дигитална младина",
         opis: "Проектот „MladiHUB – Дигитална младина“ е имплементиран од Националниот младински совет на Македонија (НМСМ) и Стопанската комора за информатички и комуникациски технологии – МАСИТ,а поддржан од Британската амбасада Скопје.",
         datum: "30. 08. 2021г.",
-        link: "/pages/proekti/projects-template.html?id=mladi-hub", // <- LINK DO STRANATA
+        link: "./pages/proekti/projects-template.html?id=mladi-hub", // <- LINK DO STRANATA
 
         // ZA VNATRE HTML!
         content: `
@@ -93,11 +93,11 @@ let projectsData = [
             id: "idealist",
             status: "current", // "current" or "finished"
             // za kartica
-            thumbnail: "/src/img/cards/proekti/idealist.png",
+            thumbnail: "./src/img/cards/proekti/idealist.png",
             naslov: "Ideal-ist",
             opis: "Ideal-ist е меѓународна ИКТ Национална мрежа за контактни точки (NCP), што поддржува истражување и иновации во рамките на рамковните програми на ЕУ.",
             datum: "30. 08. 2021г.",
-            link: "/pages/proekti/projects-template.html?id=idealist", // <- LINK DO STRANATA
+            link: "./pages/proekti/projects-template.html?id=idealist", // <- LINK DO STRANATA
     
             // ZA VNATRE HTML!
             content: `

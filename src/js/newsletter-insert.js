@@ -1,6 +1,6 @@
 function loadNewsletter() {
     var xfr = new XMLHttpRequest();
-    xfr.open('GET', '/src/html-templates/newsletter.html', true);
+    xfr.open('GET', './src/html-templates/newsletter.html', true);
 
     xfr.onload = function() {
         if (xfr.status >= 200 && xfr.status < 300) {

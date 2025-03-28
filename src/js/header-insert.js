@@ -1,6 +1,6 @@
 function loadHeader(callback) {
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', '/src/html-templates/header-footer/header.html', true);
+    xhr.open('GET', './src/html-templates/header-footer/header.html', true);
 
     xhr.onload = function() {
         if (xhr.status >= 200 && xhr.status < 300) {

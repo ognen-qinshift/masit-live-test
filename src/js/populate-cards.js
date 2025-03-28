@@ -3,7 +3,7 @@ async function populateCards(dataVarName, containerSelector, loadCount = dataVar
     const cardsContainer = document.querySelector(containerSelector);
 
     // Fetch the card template
-    const response = await fetch('/src/html-templates/card-template.html');
+    const response = await fetch('./src/html-templates/card-template.html');
     const cardTemplate = await response.text();
 
     let currentIndex = 0; // Track the current index of loaded cards

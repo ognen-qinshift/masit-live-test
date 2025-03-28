@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <base href="/">
+    <base href="/masit-redesign/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News-inner</title>
-    <link rel="stylesheet" href="/src/css/system.css">
-    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="./src/css/system.css">
+    <link rel="stylesheet" href="./src/css/main.css">
 </head>
 
 
@@ -16,8 +16,8 @@
     <!-- /////////// header ///////////// -->
 
     <header class="header"></header>
-    <script src="/src/js/header-insert.js"></script>
-    <script src="/src/js/header-interactions.js"></script>
+    <script src="./src/js/header-insert.js"></script>
+    <script src="./src/js/header-interactions.js"></script>
 
     <!-- /////////// header ////////////  -->
 
@@ -58,9 +58,9 @@
                 <h3 class="heading h2-size">Проекти</h3>
                 <div class="aside-cards-wrap">
                     <!-- PROEKTI DATA  -->
-                    <script src="/pages/proekti/projects-data.js"></script>
+                    <script src="./pages/novosti/news-data.js"></script>
                     <!-- povrzuvanje  -->
-                    <script src="/src/js/populate-cards.js"></script>
+                    <script src="./src/js/populate-cards.js"></script>
                     <!-- broj  -->
                     <script>
                         populateCards(projectsData, '.aside-cards-wrap', 2);
@@ -69,7 +69,7 @@
 
                 <!-- end btn  -->
                 <div>
-                    <a href="/pages/proekti/projects.html" class="btn btn-orange">Сите проекти
+                    <a href="./pages/proekti/projects.html" class="btn btn-orange">Сите проекти
                         <svg class="btn-ico" viewBox="0 0 20 20">
                             <defs>
                                 <style>
@@ -99,7 +99,7 @@
     <!-- FOOTER ////////////////////////////// -->
 
     <footer class="padding-lr footer"></footer>
-    <script src="/src/js/footer-insert.js"></script>
+    <script src="./src/js/footer-insert.js"></script>
 
     <!-- FOOTER END ////////////////////////////// -->
 
@@ -109,7 +109,7 @@
     <!-- PROEKTI DATA  -->
     <script src="/pages/novosti/news-data.js"></script>
     <!-- povrzuvanje  -->
-    <script src="/src/js/populate-data.js"></script>
+    <script src="./src/js/populate-data.js"></script>
     <!-- so koja data da se povrze  -->
     <script>
         populateData(newsData); // target data
