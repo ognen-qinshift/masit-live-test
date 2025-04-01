@@ -680,7 +680,7 @@ main .btn {
 
 .kartica-clip-bg {
     /* background-color: var(--primarna0); */
-    background-image: url(/src/img/visuals/Subtract.svg);
+    background-image: url(./src/img/visuals/Subtract.svg);
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -2067,9 +2067,9 @@ footer .heading {
             grid-template-columns: repeat(3, 1fr);
         }
 
-        .heading-container {
-            /* padding: 50px 50px; */
-        }
+        /* .heading-container {
+            padding: 50px 50px;
+        } */
 
         .main-aside-wrapper {
             width: calc(100% - 100px);
@@ -2082,9 +2082,9 @@ footer .heading {
             grid-template-columns: repeat(2, 1fr);
         }
 
-        .heading-container {
-            /* padding: 50px 30px; */
-        }
+        /* .heading-container {
+            padding: 50px 30px;
+        } */
 
         .main-aside-wrapper {
             width: calc(100% - 60px);
@@ -2097,9 +2097,9 @@ footer .heading {
             grid-template-columns: 1fr;
         }
 
-        .heading-container {
-            /* padding: 50px 20px; */
-        }
+        /* .heading-container {
+            padding: 50px 20px;
+        } */
 
         .main-aside-wrapper {
             width: calc(100% - 40px);
