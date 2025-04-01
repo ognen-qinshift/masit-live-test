@@ -66,47 +66,47 @@ async function populateCards(dataVarName, containerSelector, loadCount = dataVar
 
 
 
-// Define waitForElement first
-function waitForElement(selector, callback) {
-    const observer = new MutationObserver((mutations, obs) => {
-        const elements = document.querySelectorAll(selector);
-        if (elements.length > 0) {
-            // Elements found, stop observing and run the callback
-            obs.disconnect(); // Stop observing
-            callback(elements); // Pass all elements to the callback
-        }
-    });
+// // Define waitForElement first
+// function waitForElement(selector, callback) {
+//     const observer = new MutationObserver((mutations, obs) => {
+//         const elements = document.querySelectorAll(selector);
+//         if (elements.length > 0) {
+//             // Elements found, stop observing and run the callback
+//             obs.disconnect(); // Stop observing
+//             callback(elements); // Pass all elements to the callback
+//         }
+//     });
 
-    // Start observing the document for changes
-    observer.observe(document, {
-        childList: true, // Observe direct children
-        subtree: true, // Observe all descendants
-    });
-}
+//     // Start observing the document for changes
+//     observer.observe(document, {
+//         childList: true, // Observe direct children
+//         subtree: true, // Observe all descendants
+//     });
+// }
 
-// Now you can safely call waitForElement
-waitForElement('.card', function (cards) {
+// // Now you can safely call waitForElement
+// waitForElement('.card', function (cards) {
 
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            const card3 = entry.target.querySelector('.card');
+//     const observer = new IntersectionObserver(entries => {
+//         entries.forEach(entry => {
+//             const card3 = entry.target.querySelector('.card');
 
-            if (entry.isIntersecting) {
-                card3.classList.add('card-animation');
-                return; // if we added the class, exit the function
-            } else {
+//             if (entry.isIntersecting) {
+//                 card3.classList.add('card-animation');
+//                 return; // if we added the class, exit the function
+//             } else {
 
-                // We're not intersecting, so remove the class!
-                card3.classList.remove('card-animation');
-            };
-        });
-    });
+//                 // We're not intersecting, so remove the class!
+//                 card3.classList.remove('card-animation');
+//             };
+//         });
+//     });
 
-    // Get multiple elements instead of a single one using "querySelectorAll"
-    const cards2 = document.querySelectorAll('.card-wrap');
+//     // Get multiple elements instead of a single one using "querySelectorAll"
+//     const cards2 = document.querySelectorAll('.card-wrap');
 
-    // Loop over the elements and add each one to the observer
-    cards2.forEach((element) => observer.observe(element));
-});
+//     // Loop over the elements and add each one to the observer
+//     cards2.forEach((element) => observer.observe(element));
+// });
 
 
