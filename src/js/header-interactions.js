@@ -40,6 +40,7 @@ function initializeScripts() {
             // Scrolling down - hide navbar and close dropdown
             navbar.style.transform = "translateY(-100%)";
             closeDropdown();
+            closeBurgerMenu(); //////////////////////////////////////////////////////////////////////////////////////////////
         } else {
             // Scrolling up - show navbar
             navbar.style.transform = "translateY(0)";
@@ -58,7 +59,7 @@ function initializeScripts() {
             clearTimeout(autoCloseTimeout);
             autoCloseTimeout = setTimeout(() => {
                 closeDropdown();
-            }, 3000); // Auto-close after 3 seconds
+            }, 300000); // Auto-close after 3 seconds
         } else {
             closeDropdown(); // Collapse if already open
         }
@@ -73,35 +74,68 @@ function initializeScripts() {
     navOpen.addEventListener("mouseleave", function () {
         autoCloseTimeout = setTimeout(() => {
             closeDropdown();
-        }, 1000);
+        }, 100000);
     });
 
     ///////////////// navbar open close END ///////////////////////////
 
+    // mobile nav menu open/close /////////////////////////////////////////
 
-    /////////////////// SET ACTIVE NAV LINK ///////////////////////////////////////////
+    // burger menu toggle class
 
-    function setActiveNavLink() {
-        const navLinks = document.querySelectorAll('.btn-link-blue');
-        const currentPage = window.location.pathname.split('/').pop(); // Get the current page filename
-        const currentPageFull = window.location.pathname;
+    let burger = document.querySelector(".burger");
+    burger.addEventListener("click", burgerOpenClose);
 
-        navLinks.forEach(link => {
-            const linkHref = link.getAttribute('href');
-            const linkPage = link.getAttribute('href').split('/').pop(); // Get the link's page filename
+    // drugi selectors 
 
-            if (
-                (linkPage === currentPage) ||
-                (currentPageFull.includes('/proekti/') && linkHref.includes('proekti')) ||
-                (currentPageFull.includes('/novosti/') && linkHref.includes('novosti')) ||
-                (currentPageFull.includes('/publikacii/') && linkHref.includes('publikacii'))
-            ) {
-                link.classList.add('link-current'); // Add the active class to the matching link
-            }
-        });
+    let nav1 = document.querySelector(".navbar1");
+    let linksnav1 = document.querySelector(".links-nav");
+
+    // classlist toggle 
+
+    function burgerOpenClose(){
+        burger.classList.toggle("burger-active");
+        nav1.classList.toggle("navbar1-open");
+        linksnav1.classList.toggle("links-nav-hide");
     }
-    // Call the function to set the active link
-    setActiveNavLink();
+
+    // close only 
+
+    function closeBurgerMenu() {
+        burger.classList.remove("burger-active");
+        nav1.classList.remove("navbar1-open");
+        linksnav1.classList.add("links-nav-hide");
+    }
+
+
+
+        /////////////////// SET ACTIVE NAV LINK ///////////////////////////////////////////
+
+        function setActiveNavLink() {
+            const navLinks = document.querySelectorAll('.btn-link-blue');
+            const currentPage = window.location.pathname.split('/').pop(); // Get the current page filename
+            const currentPageFull = window.location.pathname;
+    
+            navLinks.forEach(link => {
+                const linkHref = link.getAttribute('href');
+                const linkPage = link.getAttribute('href').split('/').pop(); // Get the link's page filename
+    
+                if (
+                    (linkPage === currentPage) ||
+                    (currentPageFull.includes('/proekti/') && linkHref.includes('proekti')) ||
+                    (currentPageFull.includes('/novosti/') && linkHref.includes('novosti')) ||
+                    (currentPageFull.includes('/publikacii/') && linkHref.includes('publikacii'))
+                ) {
+                    link.classList.add('link-current'); // Add the active class to the matching link
+                }
+            });
+        }
+        // Call the function to set the active link
+        setActiveNavLink();
+
+
+
+
 
 }
 // Load the header and then initialize the scripts

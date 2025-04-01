@@ -120,6 +120,33 @@
     --padding-tb: 40px;
     --padding-tb-xl: 80px;
     --padding-tb-xxl: 120px;
+
+
+    /* ridges  */
+
+    --ridge-height: 44px;
+}
+
+@media screen and (max-width: 1600px) {
+    :root {
+        /* padding levo-desno */
+        --padding-lr: 6%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    :root {
+        --ridge-height: 30px;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    :root {
+        /* padding levo-desno */
+        --padding-lr: 16px;
+    }
 }
 
 
@@ -132,6 +159,7 @@ body {
     text-wrap: pretty;
     scroll-behavior: smooth;
 }
+
 
 *,
 ::before,
@@ -186,6 +214,13 @@ html {
     /* letter-spacing: -0.02em; */
 }
 
+@media screen and (max-width: 900px) {
+
+    html {
+        font-size: 80%;
+    }
+}
+
 
 /* headings  */
 
@@ -222,6 +257,7 @@ html {
 .small-xs {
     font-size: 0.694rem;
 }
+
 
 /* /////// buttons //////// */
 
@@ -275,13 +311,13 @@ html {
     }
 }
 
-.btn-s{
+.btn-s {
     padding: 6px 22px;
 }
 
 /* links default */
 
-a{
+a {
     color: unset;
     text-decoration: none;
 }
@@ -291,7 +327,7 @@ a{
 .btn-link {
     background-color: unset;
     position: relative;
-    padding: 0px;    
+    padding: 0px;
 
     &:after {
         content: "";
@@ -356,16 +392,16 @@ a{
     }
 
     /* hover +  current  */
-    
+
     &:hover,
     &.link-current {
         color: var(--sekundarna0);
-    
+
         .btn-ico {
             .st0 {
                 stroke: var(--sekundarna0);
             }
-    
+
             .st1 {
                 fill: var(--sekundarna0);
             }
@@ -374,17 +410,17 @@ a{
         &:after {
             background-color: var(--sekundarna0);
         }
-        
+
     }
 
     &:active {
         color: var(--sekundarna-4);
-    
+
         .btn-ico {
             .st0 {
                 stroke: var(--sekundarna-4);
             }
-    
+
             .st1 {
                 fill: var(--sekundarna-4);
             }
@@ -393,7 +429,7 @@ a{
         &:after {
             background-color: var(--sekundarna-4);
         }
-        
+
     }
 }
 

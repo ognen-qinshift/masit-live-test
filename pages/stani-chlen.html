@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
+    <!-- <base href="/masit-live-test/"> -->
     <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proekti</title>
-    <link rel="stylesheet" href="/src/css/system.css">
-    <link rel="stylesheet" href="/src/css/main.css">
+    <title>Стани член</title>
+    <link rel="stylesheet" href="./src/css/system.css">
+    <link rel="stylesheet" href="./src/css/main.css">
 </head>
 
 
@@ -16,8 +17,8 @@
     <!-- /////////// header ///////////// -->
 
     <header class="header"></header>
-    <script src="/src/js/header-insert.js"></script>
-    <script src="/src/js/header-interactions.js"></script>
+    <script src="./src/js/header-insert.js"></script>
+    <script src="./src/js/header-interactions.js"></script>
 
     <!-- /////////// header ////////////  -->
 
@@ -25,11 +26,31 @@
     <!-- // heading //////////////////////////////////// -->
 
 
-    <section class="heading-container padding-lr" style="height: 30vh; background-color: blue">
-        <div class="heading">
-            Биди и ти дел од МАСИТ
+    <section class="heading-container blue-gradient-bg padding-lr" style="position: relative;">
+
+        <div class="heading-text-container">
+            <h2 class="heading h1-size">
+                Биди и ти дел од МАСИТ
+            </h2>
         </div>
+
+        <!-- corners bot 0vh -->
+        <div style="width: 100%; overflow: visible; position: absolute; bottom: 0; left: 0; z-index: 10;">
+            <div class="corners-sorabotnici-2" style="background: none;">
+                <div class="corner-container">
+                    <!-- <div class="corner-fill"></div>
+                    <img src="./src/img/icons/mask-corner.svg" alt="" class="corner1"> -->
+                    <div></div>
+                    <img src="./src/img/icons/mask-corner.svg" alt="" class="corner2">
+                    <div class="corner-fill"></div>
+                </div>
+            </div>
+        </div>
+        <!-- corners bot end -->
+
     </section>
+
+    <!-- heading END --------------------- -->
 
 
 
@@ -40,8 +61,6 @@
 
 
             <div class="data-container">
-
-
 
 
                 <div class="textBlue lineHeight1 fontBold textSize38 textSizeTab23 marginBottom5 ">
@@ -178,7 +197,7 @@
                                     <div class="grecaptcha-noscript">
                                         <iframe
                                             src="https://www.google.com/recaptcha/api/fallback?k=6LdHDNwUAAAAAMPQhD5HIpN8k8xInoBlhhEji4DW"
-                                            frameborder="0" scrolling="no" width="310" height="430">
+                                            frameborder="0" scrolling="no" width="100%" height="430">
                                         </iframe>
                                         <textarea name="g-recaptcha-response" rows="3" cols="40"
                                             placeholder="reCaptcha Response Here">
@@ -187,10 +206,7 @@
                                 </noscript>
                             </div>
 
-                            <input type="submit" value="Аплицирај"
-                                class="wpcf7-form-control wpcf7-submit btn btn-outline-secondary centerBtn displayInlineBlock bgYellow btnCustomeSendEmail btnContactUs textWhite text-uppercase"><span
-                                class="ajax-loader"></span>
-                            <div class="wpcf7-response-output wpcf7-display-none"></div>
+                            <input type="submit" value="Аплицирај" class="btn btn-orange" style="border: none;"><span></span>                            
                         </form>
                     </div>
                 </div>
@@ -247,7 +263,7 @@
 
     <!-- FOOTER ////////////////////////////// -->
 
-    <footer class="padding-lr footer"></footer>
+    <footer></footer>
     <script src="/src/js/footer-insert.js"></script>
 
     <!-- FOOTER END ////////////////////////////// -->

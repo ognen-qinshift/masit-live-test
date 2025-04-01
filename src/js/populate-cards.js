@@ -18,6 +18,7 @@ async function populateCards(dataVarName, containerSelector, loadCount = dataVar
             // Create a new card element
             const card = document.createElement('div');
             card.classList.add('card-wrap');
+            card.setAttribute("data-aos", "fade-up");
             card.innerHTML = cardTemplate;
 
             // Populate the card with project data

@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
+    <!-- <base href="/masit-live-test/"> -->
     <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proekti</title>
-    <link rel="stylesheet" href="/src/css/system.css">
-    <link rel="stylesheet" href="/src/css/main.css">
+    <title>Usluga za ZIS</title>
+    <link rel="stylesheet" href="./src/css/system.css">
+    <link rel="stylesheet" href="./src/css/main.css">
 </head>
 
 
@@ -16,8 +17,8 @@
     <!-- /////////// header ///////////// -->
 
     <header class="header"></header>
-    <script src="/src/js/header-insert.js"></script>
-    <script src="/src/js/header-interactions.js"></script>
+    <script src="./src/js/header-insert.js"></script>
+    <script src="./src/js/header-interactions.js"></script>
 
     <!-- /////////// header ////////////  -->
 
@@ -25,11 +26,31 @@
     <!-- // heading //////////////////////////////////// -->
 
 
-    <section class="heading-container padding-lr" style="height: 30vh; background-color: blue">
-        <div class="heading">
-            Tековни проекти
+    <section class="heading-container blue-gradient-bg padding-lr" style="position: relative;">
+
+        <div class="heading-text-container">
+            <h2 class="heading h1-size">
+                Услуга за ЗИС
+            </h2>
         </div>
+
+        <!-- corners bot 0vh -->
+        <div style="width: 100%; overflow: visible; position: absolute; bottom: 0; left: 0; z-index: 10;">
+            <div class="corners-sorabotnici-2" style="background: none;">
+                <div class="corner-container">
+                    <!-- <div class="corner-fill"></div>
+                    <img src="./src/img/icons/mask-corner.svg" alt="" class="corner1"> -->
+                    <div></div>
+                    <img src="./src/img/icons/mask-corner.svg" alt="" class="corner2">
+                    <div class="corner-fill"></div>
+                </div>
+            </div>
+        </div>
+        <!-- corners bot end -->
+
     </section>
+
+    <!-- heading END --------------------- -->
 
 
 
@@ -38,243 +59,266 @@
     <main>
         <div class="main-aside-wrapper padding-lr">
 
-
-            <div class="data-container">
-
+            <div class="main-content">
 
 
-
-                <div class="textBlue lineHeight1 fontBold textSize38 textSizeTab23 marginBottom5 ">
-                    ПРОЕКТ ЗА ЗИС, УСЛУГА ЗА ЗИС</div>
-                <div class="becomeMemberContent">
-
-                    <p><strong>ПРОЕКТ ЗА ПОДИГНУВАЊЕ НА СВЕСТА ЗА ПОТРЕБАТА ОД ЗАШТИТА НА ПРАВАТА ОД ИНДУСТРИСКА
-                            СОПСТВЕНОСТ
-                            И
-                            ВОСПОСТАВУВАЊЕ НА ИНИЦИЈАЛНА ПРАВНА ПОМОШ ВО КОМОРАТА</strong></p>
+                <div class="data-container">
 
 
 
-                    <p><strong>Имплементатор на проектот:&nbsp;</strong>Стопанска комора за информатички и комуникациски
-                        технологии – МАСИТ</p>
+
+                    <div class="textBlue lineHeight1 fontBold textSize38 textSizeTab23 marginBottom5 ">
+                        ПРОЕКТ ЗА ЗИС, УСЛУГА ЗА ЗИС</div>
+                    <div class="becomeMemberContent">
+
+                        <p><strong>ПРОЕКТ ЗА ПОДИГНУВАЊЕ НА СВЕСТА ЗА ПОТРЕБАТА ОД ЗАШТИТА НА ПРАВАТА ОД ИНДУСТРИСКА
+                                СОПСТВЕНОСТ
+                                И
+                                ВОСПОСТАВУВАЊЕ НА ИНИЦИЈАЛНА ПРАВНА ПОМОШ ВО КОМОРАТА</strong></p>
 
 
 
-                    <p><strong>Финансиран од:&nbsp;</strong>Швајцарската програма за зголемување на пазарната
-                        вработливост –
-                        ИМЕ.&nbsp;</p>
+                        <p><strong>Имплементатор на проектот:&nbsp;</strong>Стопанска комора за информатички и
+                            комуникациски
+                            технологии – МАСИТ</p>
 
 
 
-                    <p><strong>Поддржани сектори:</strong><strong>&nbsp;</strong>Mикро, мали и средни компании и
-                        стартапи во
-                        ИКТ
-                        секторот</p>
+                        <p><strong>Финансиран од:&nbsp;</strong>Швајцарската програма за зголемување на пазарната
+                            вработливост –
+                            ИМЕ.&nbsp;</p>
 
 
 
-                    <figure
-                        class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
-                        <div class="wp-block-embed__wrapper">
-                            <iframe
-                                title="Проект за подигнување на свеста за потребата од заштита на правата од индустриска сопственост"
-                                width="640" height="360" src="https://www.youtube.com/embed/naQnxGThDsU?feature=oembed"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
-                        </div>
-                    </figure>
+                        <p><strong>Поддржани сектори:</strong><strong>&nbsp;</strong>Mикро, мали и средни компании и
+                            стартапи во
+                            ИКТ
+                            секторот</p>
 
 
 
-                    <p><strong>ЗНАЧЕЊЕТО И ПОТРЕБАТА ОД ЗАШТИТА НА ПРАВАТА НА ИНДУСТРИСКА СОПСТВЕНОСТ&nbsp;</strong></p>
+                        <figure
+                            class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
+                            <div class="wp-block-embed__wrapper">
+                                <iframe
+                                    title="Проект за подигнување на свеста за потребата од заштита на правата од индустриска сопственост"
+                                    width="640" height="360"
+                                    src="https://www.youtube.com/embed/naQnxGThDsU?feature=oembed" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+                            </div>
+                        </figure>
 
 
 
-                    <p>Иновациите&nbsp;и примените на напредни и иновативни технологии, знаења и вештини и технолошки
-                        процеси
-                        секогаш се клучот за успех во секоја компанија и претставуваат извор на силен и одржлив раст.
-                        Следењето
-                        на трендовите на технолошки развој во ИКТ индустријата нераздвојно значат можност и потреба за
-                        развивање
-                        на нови технолошки, научни и општи ИКТ доктринарни знаења, решенија и генерирање продукти.
-                        Оттука,
-                        многу
-                        често свесно и со намера, а понекогаш и нужно како дел од процесот на интелектуален ангажман се
-                        изнедруваат посебни интелектуални творби кои имаат свој идентитет.&nbsp;</p>
+                        <p><strong>ЗНАЧЕЊЕТО И ПОТРЕБАТА ОД ЗАШТИТА НА ПРАВАТА НА ИНДУСТРИСКА СОПСТВЕНОСТ&nbsp;</strong>
+                        </p>
 
 
 
-                    <p>Заштита на правата на индустриска сопственост е инструмент кој има голема улога во секоја
-                        индустрија,
-                        а
-                        заради претходно кажаното во ИКТ индустријата особено. Следствено, овие творби и/или продукти се
-                        квалификувани за заштита, локално и/или меѓународно. Парадоксално, но наспроти иновативиот,
-                        умствениот и
-                        работниот капацитет од другата страна постои делумно непознавање и несигурнст во потребата и
-                        опциите
-                        за
-                        заштита на моралните и материјалните интелектуални права. Ова се однесува и во делот на
-                        превенирање
-                        на
-                        недопуштено однесување на трети лица кон нечија интелектуална сопственост и во однос на
-                        генерирањето
-                        на
-                        активни и пасивни приходи од интелектуалната сопственост. Македонските компании не се доволно
-                        свесни
-                        за
-                        практичната примена за заштита на правата на индустриска сопственост, но се свесни дека е од
-                        клучно
-                        значење за подигање на конкурентноста за раст и развој на своите компании. Преку имплементација
-                        на
-                        ваков
-                        проект, која компаниите ќе ја добиваат во согласност со својата стратегија за развој би ја
-                        подобриле
-                        својата позиција на национално и на интернационално ниво.&nbsp;</p>
-
-
-
-                    <p><strong>Цел на проектот:</strong></p>
-
-
-
-                    <p>Целта на овој проект е преку низа активности, МАСИТ да им овозможи на своите компании членки
-                        соодветна
-                        едукација во поглед на придобивките од&nbsp;<strong>Intellectual Property Rights
-                            (IPR)</strong>,&nbsp;согледување на најновите современи дилеми наспроти традиционалните
-                        поими,
-                        овозможување на практична помош и имплементација од страна на комората МАСИТ за заштита на
-                        интелектуални
-                        права за компании-членки на МАСИТ, преку иницијална прaвна помош и понатамошно насочување.&nbsp;
-                    </p>
-
-
-
-                    <p>Преку овој проект, сакаме да овозможиме одблизу&nbsp;ИКТ компаниите да се запознаат со
-                        суштинското
-                        значење и придобивките од спроведување на заштита на индустриската сопственост, со намера да
-                        позитивно
-                        да влијаеме во донесувањето разумни одлуки преку континуирано работење на подигање на свеста и
-                        помош
-                        во
-                        деловно работење на самите компании, со крајна цел воспоставување на нова услуга во Комората кон
-                        компаниите членки на МАСИТ за постојана правна помош за заштита на интелектуалната и
-                        индустриската
-                        сопственост.&nbsp;</p>
-
-
-
-                    <p><strong>Главни активности на проектот:</strong></p>
-
-
-
-                    <ul>
-                        <li>ЕДУКАТИВЕН ДЕЛ/ПОДИГАЊЕ НА СВЕСТА</li>
-                    </ul>
-
-
-
-                    <p>Запознавање со видовите на права и потребата и можноста за нивна заштита со квалитетно и
-                        едноставно
-                        презентирање со примена на наративно едукативен метод комбиниран со највообичаените достапни
-                        инструменти, заблуди и грешки.&nbsp;</p>
-
-
-
-                    <p>Запознавање со знаење на:</p>
-
-
-
-                    <ul>
-                        <li>правата,</li>
-                        <li>предмет на можна заштита,&nbsp;</li>
-                        <li>нивото и територијалниот опсег на заштита зависно од предметот на заштита,</li>
-                        <li>придобивките од заштитата односно ризиците од незаштитувањето и&nbsp;</li>
-                        <li>видување на експерт од странство, за странски искуства/трети јурисдикции.&nbsp;</li>
-                    </ul>
-
-
-
-                    <ul>
-                        <li>МАТЕРИЈАЛНИ ПРИДОБИВКИ ОД ЗАШТИТА НА ИНТЕЛЕКТУАЛНИТЕ ПРАВА</li>
-                        <li>Појаснување на материјалните придобивки од заштитата односно комерцијалното ефектуирање и
-                            можност за
-                            пасивен приход&nbsp;&nbsp;</li>
-                    </ul>
-
-
-
-                    <ul>
-                        <li>ИСТАКНУВАЊЕ НА НАЈНОВИТЕ/СОВРЕМЕНИ ДИЛЕМИ НАСПРОТИ ТРАДИЦИОНАЛНИТЕ ПОИМИ НА ИНТЕЛЕКТУАЛНАТА
-                            СОПСТВЕНОСТ</li>
-                        <li>Отварање на прашања кои се поврзани со интелктуалната и индустриската сопственост во
-                            комбинација
-                            со
-                            авторски права како резултат на најновите трендови во ИТ, особено вештачката интелегенција и
-                            роботиката. Ова особено станува актуелно со користењето на вештачката интелегенција за
-                            изработка
-                            на
-                            софтвери, апликации, алатки, алгоритми.&nbsp;</li>
-                    </ul>
-
-
-
-                    <ul>
-                        <li>ВОСПОСТАВУВАЊЕ НА СИСТЕМ ЗА ПОСТОЈАНА ИНИЦИЈАЛНА ПРАВНА ПОМОШ ЗА ЗАШТИТА НА ИНТЕЛЕКТУАЛНИТЕ
-                            ПРАВА&nbsp;</li>
-                        <li>Поставување на основи за услуга кон членството /практична помош од страна на Комората МАСИТ
+                        <p>Иновациите&nbsp;и примените на напредни и иновативни технологии, знаења и вештини и
+                            технолошки
+                            процеси
+                            секогаш се клучот за успех во секоја компанија и претставуваат извор на силен и одржлив
+                            раст.
+                            Следењето
+                            на трендовите на технолошки развој во ИКТ индустријата нераздвојно значат можност и потреба
                             за
-                            заштита на интелектуални права за стартапите микро, мали и средни претпириемачи кои се (би
-                            биле)
-                            членки на МАСИТ преку иницијална прaвна помош и насочување&nbsp;</li>
-                        <li>Можно обезбедување и на посебен попуст на услугата од страна на комерцијалниот давател на
-                            правната
-                            услуга за заштита на интелектуална сопственост сопственост или евентуално субвенционирање со
-                            износ
-                            обеззбеден од донаторска програма.</li>
-                    </ul>
+                            развивање
+                            на нови технолошки, научни и општи ИКТ доктринарни знаења, решенија и генерирање продукти.
+                            Оттука,
+                            многу
+                            често свесно и со намера, а понекогаш и нужно како дел од процесот на интелектуален ангажман
+                            се
+                            изнедруваат посебни интелектуални творби кои имаат свој идентитет.&nbsp;</p>
 
 
 
-                    <figure
-                        class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
-                        <div class="wp-block-embed__wrapper">
-                            <iframe
-                                title="Прва едукативна работилница на тема: ЗАШТИТА НА ПРАВАТА ОД ИНДУСТРИСКА СОПСТВЕНОСТ"
-                                width="640" height="360" src="https://www.youtube.com/embed/3H0gDlGNaKE?feature=oembed"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
-                        </div>
-                    </figure>
+                        <p>Заштита на правата на индустриска сопственост е инструмент кој има голема улога во секоја
+                            индустрија,
+                            а
+                            заради претходно кажаното во ИКТ индустријата особено. Следствено, овие творби и/или
+                            продукти се
+                            квалификувани за заштита, локално и/или меѓународно. Парадоксално, но наспроти иновативиот,
+                            умствениот и
+                            работниот капацитет од другата страна постои делумно непознавање и несигурнст во потребата и
+                            опциите
+                            за
+                            заштита на моралните и материјалните интелектуални права. Ова се однесува и во делот на
+                            превенирање
+                            на
+                            недопуштено однесување на трети лица кон нечија интелектуална сопственост и во однос на
+                            генерирањето
+                            на
+                            активни и пасивни приходи од интелектуалната сопственост. Македонските компании не се
+                            доволно
+                            свесни
+                            за
+                            практичната примена за заштита на правата на индустриска сопственост, но се свесни дека е од
+                            клучно
+                            значење за подигање на конкурентноста за раст и развој на своите компании. Преку
+                            имплементација
+                            на
+                            ваков
+                            проект, која компаниите ќе ја добиваат во согласност со својата стратегија за развој би ја
+                            подобриле
+                            својата позиција на национално и на интернационално ниво.&nbsp;</p>
 
 
 
-                    <figure
-                        class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
-                        <div class="wp-block-embed__wrapper">
-                            <iframe
-                                title="Втора едукативна работилница на тема „Заштита на правата од индустриска сопственост“"
-                                width="640" height="360" src="https://www.youtube.com/embed/TxIvDHrMQD4?feature=oembed"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
-                        </div>
-                    </figure>
+                        <p><strong>Цел на проектот:</strong></p>
 
 
 
-                    <figure
-                        class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
-                        <div class="wp-block-embed__wrapper">
-                            <iframe
-                                title="Трета едукативна работилница на тема „Заштита на правата од индустриска сопственост“"
-                                width="640" height="360" src="https://www.youtube.com/embed/0c9PUrVG9_Y?feature=oembed"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
-                        </div>
-                    </figure>
+                        <p>Целта на овој проект е преку низа активности, МАСИТ да им овозможи на своите компании членки
+                            соодветна
+                            едукација во поглед на придобивките од&nbsp;<strong>Intellectual Property Rights
+                                (IPR)</strong>,&nbsp;согледување на најновите современи дилеми наспроти традиционалните
+                            поими,
+                            овозможување на практична помош и имплементација од страна на комората МАСИТ за заштита на
+                            интелектуални
+                            права за компании-членки на МАСИТ, преку иницијална прaвна помош и понатамошно
+                            насочување.&nbsp;
+                        </p>
+
+
+
+                        <p>Преку овој проект, сакаме да овозможиме одблизу&nbsp;ИКТ компаниите да се запознаат со
+                            суштинското
+                            значење и придобивките од спроведување на заштита на индустриската сопственост, со намера да
+                            позитивно
+                            да влијаеме во донесувањето разумни одлуки преку континуирано работење на подигање на свеста
+                            и
+                            помош
+                            во
+                            деловно работење на самите компании, со крајна цел воспоставување на нова услуга во Комората
+                            кон
+                            компаниите членки на МАСИТ за постојана правна помош за заштита на интелектуалната и
+                            индустриската
+                            сопственост.&nbsp;</p>
+
+
+
+                        <p><strong>Главни активности на проектот:</strong></p>
+
+
+
+                        <ul>
+                            <li>ЕДУКАТИВЕН ДЕЛ/ПОДИГАЊЕ НА СВЕСТА</li>
+                        </ul>
+
+
+
+                        <p>Запознавање со видовите на права и потребата и можноста за нивна заштита со квалитетно и
+                            едноставно
+                            презентирање со примена на наративно едукативен метод комбиниран со највообичаените достапни
+                            инструменти, заблуди и грешки.&nbsp;</p>
+
+
+
+                        <p>Запознавање со знаење на:</p>
+
+
+
+                        <ul>
+                            <li>правата,</li>
+                            <li>предмет на можна заштита,&nbsp;</li>
+                            <li>нивото и територијалниот опсег на заштита зависно од предметот на заштита,</li>
+                            <li>придобивките од заштитата односно ризиците од незаштитувањето и&nbsp;</li>
+                            <li>видување на експерт од странство, за странски искуства/трети јурисдикции.&nbsp;</li>
+                        </ul>
+
+
+
+                        <ul>
+                            <li>МАТЕРИЈАЛНИ ПРИДОБИВКИ ОД ЗАШТИТА НА ИНТЕЛЕКТУАЛНИТЕ ПРАВА</li>
+                            <li>Појаснување на материјалните придобивки од заштитата односно комерцијалното ефектуирање
+                                и
+                                можност за
+                                пасивен приход&nbsp;&nbsp;</li>
+                        </ul>
+
+
+
+                        <ul>
+                            <li>ИСТАКНУВАЊЕ НА НАЈНОВИТЕ/СОВРЕМЕНИ ДИЛЕМИ НАСПРОТИ ТРАДИЦИОНАЛНИТЕ ПОИМИ НА
+                                ИНТЕЛЕКТУАЛНАТА
+                                СОПСТВЕНОСТ</li>
+                            <li>Отварање на прашања кои се поврзани со интелктуалната и индустриската сопственост во
+                                комбинација
+                                со
+                                авторски права како резултат на најновите трендови во ИТ, особено вештачката
+                                интелегенција и
+                                роботиката. Ова особено станува актуелно со користењето на вештачката интелегенција за
+                                изработка
+                                на
+                                софтвери, апликации, алатки, алгоритми.&nbsp;</li>
+                        </ul>
+
+
+
+                        <ul>
+                            <li>ВОСПОСТАВУВАЊЕ НА СИСТЕМ ЗА ПОСТОЈАНА ИНИЦИЈАЛНА ПРАВНА ПОМОШ ЗА ЗАШТИТА НА
+                                ИНТЕЛЕКТУАЛНИТЕ
+                                ПРАВА&nbsp;</li>
+                            <li>Поставување на основи за услуга кон членството /практична помош од страна на Комората
+                                МАСИТ
+                                за
+                                заштита на интелектуални права за стартапите микро, мали и средни претпириемачи кои се
+                                (би
+                                биле)
+                                членки на МАСИТ преку иницијална прaвна помош и насочување&nbsp;</li>
+                            <li>Можно обезбедување и на посебен попуст на услугата од страна на комерцијалниот давател
+                                на
+                                правната
+                                услуга за заштита на интелектуална сопственост сопственост или евентуално
+                                субвенционирање со
+                                износ
+                                обеззбеден од донаторска програма.</li>
+                        </ul>
+
+
+
+                        <figure
+                            class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
+                            <div class="wp-block-embed__wrapper">
+                                <iframe
+                                    title="Прва едукативна работилница на тема: ЗАШТИТА НА ПРАВАТА ОД ИНДУСТРИСКА СОПСТВЕНОСТ"
+                                    width="640" height="360"
+                                    src="https://www.youtube.com/embed/3H0gDlGNaKE?feature=oembed" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+                            </div>
+                        </figure>
+
+
+
+                        <figure
+                            class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
+                            <div class="wp-block-embed__wrapper">
+                                <iframe
+                                    title="Втора едукативна работилница на тема „Заштита на правата од индустриска сопственост“"
+                                    width="640" height="360"
+                                    src="https://www.youtube.com/embed/TxIvDHrMQD4?feature=oembed" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+                            </div>
+                        </figure>
+
+
+
+                        <figure
+                            class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
+                            <div class="wp-block-embed__wrapper">
+                                <iframe
+                                    title="Трета едукативна работилница на тема „Заштита на правата од индустриска сопственост“"
+                                    width="640" height="360"
+                                    src="https://www.youtube.com/embed/0c9PUrVG9_Y?feature=oembed" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+                            </div>
+                        </figure>
+                    </div>
                 </div>
             </div>
 
@@ -326,7 +370,7 @@
 
     <!-- FOOTER ////////////////////////////// -->
 
-    <footer class="padding-lr footer"></footer>
+    <footer></footer>
     <script src="/src/js/footer-insert.js"></script>
 
     <!-- FOOTER END ////////////////////////////// -->
