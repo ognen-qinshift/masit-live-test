@@ -610,7 +610,7 @@ main .btn {
         z-index: -1;
         background:
             linear-gradient(to right, transparent 0%, var(--bela) 70%, transparent 100%),
-            url(/src/img/visuals/overlay-bg.jpg);
+            url(../img/visuals/overlay-bg.jpg);
         opacity: 20%;
     }
 
@@ -680,7 +680,7 @@ main .btn {
 
 .kartica-clip-bg {
     /* background-color: var(--primarna0); */
-    background-image: url(./src/img/visuals/Subtract.svg);
+    background-image: url(../img/visuals/Subtract.svg);
     background-repeat: no-repeat;
     background-size: contain;
 
